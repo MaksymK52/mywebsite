@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;600&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    background-color: #F8EDE4;
+    max-width: 1000px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navigation */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: #F0DCC5;
+    padding: 1rem 4rem;
+}
+
+nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #27150F;
+    font-size: 30px;
+    transition: 0.3s;
+    font-family: 'Playfair Display', serif;;
+}
+
+nav > ul > li > a:hover{
+    color: #9A6B3F;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#logo-img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo figcaption {
+    font-size: 2.2rem;
+    color: #27150F;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    font-family: 'Inknut Antiqua', serif;
+}
+
+/* CAfes page */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #F8EDE4;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 0.6rem;
+}
+
+.hero-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.explore-btn {
+    display: inline-block;
+    margin-top: 1.8rem;
+    padding: 1rem 3rem;
+    background-color: #C79A6D;
+    color: #F8EDE4;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.1s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.explore-btn:hover {
+    background-color: #9A6B3F;
+}
+
+.explore-btn:active {
+    transform: scale(0.95);
+}
+
+.cafe-text {
+    color: #27150F;
+    text-align: center;
+    margin: 0 auto 3rem auto;
+    max-width: 800px;
+}
+
+.cafe-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cafe-text p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.cafe-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 3rem;
+}
+
+.cafe-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+    color: #27150F;
+}
+
+.cafe-info p {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: #27150F;
+}
+
+.cafe-name {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-top: 0.7rem;
+    color: #27150F;
+}
+
+.cafes {
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.cafe-image {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cafe-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.details-btn {
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 0.7rem 1.8rem;
+    background-color: #C79A6D;
+    color: white;
+    border-radius: 25px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #9A6B3F;
+}
+
+.details-btn:active {
+    transform: scale(0.95);
+}
+
+.tip {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: #3C2C1A;
+    padding: 2rem;
+    color: #F8EDE4;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.footer-text {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+    color: #F8EDE4;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #C79A6D;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.footer-socials img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.15);
+}
+
+/* Home page */
+

@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Maksym Kolisnychenko">
     <meta name="description" content="Discover the most loved cafes in Haarlem — from hidden gems to popular local favorites.">
     <meta name="keywords" content="cafe, coffee, netherlands, Haarlem">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafe Finder</title>
-    <link rel="icon" type="" href="">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header class="menu">
         <figure class="logo">
-            <img src="Logo.png" alt="Logo">
-            <figcaption>
-                HaarlemCafes
-            </figcaption>
+            <a href="home.html">
+                <img src="images/Logo.png" alt="Logo" id="logo-img">
+                <figcaption>
+                    HaarlemCafes
+                </figcaption>
+            </a>
         </figure>
 
         <nav>
@@ -30,7 +32,7 @@
 
     <section class="hero">
         <article>
-            <img src="haarlembanner.png" alt="Haarlem City" class="hero-img">
+            <img src="images/haarlembanner.png" alt="Haarlem City" class="hero-img">
             <header class="hero-content">
                 <h1>List of cafes sorted by price</h1>
                 <h2>Here you can find all Best Cafes in Haarlem</h2>
@@ -48,35 +50,44 @@
         
             <article class="cafe-card">
                 <figure class="cafe-image">
-                    <img src="native.png" alt="Native Haarlem - Koffie">
-                    <figcaption class="cafe-name">Native Haarlem - Koffie</figcaption>
+                    <img src="images/native.png" alt="Native Haarlem - Koffie">
                 </figure>
-                <p><strong>About:</strong> A cozy specialty coffee bar filled with plants and vintage furniture, located in the heart of Haarlem.
+                <section class="cafe-info">
+                    <h2>Native Haarlem - Koffie</h2>
+                    <p><strong>About:</strong> A cozy specialty coffee bar filled with plants and vintage furniture, located in the heart of Haarlem.
                     They are known for their homemade pastries and freshly roasted beans from local suppliers.
-                </p>
-                <p><strong>Address:</strong> Breestraat 23, 2011 ZX Haarlem</p>
+                    </p>
+                    <p><strong>Address:</strong> Breestraat 23, 2011 ZX Haarlem</p>
+                    <a href="details.html" class="details-btn">View Details</a>
+                </section>
             </article>
 
             <article class="cafe-card">
                 <figure class="cafe-image">
-                    <img src="mogador.png" alt="Mogador Café">
-                    <figcaption class="cafe-name">Mogador Café</figcaption>
+                    <img src="images/mogador.png" alt="Mogador Café">
                 </figure>
-                <p><strong>About:</strong> One of Haarlem's classic cafes with a warm, homely atmosphere.
+                <section class="cafe-info">
+                    <h2>Mogador Café</h2>
+                    <p><strong>About:</strong> One of Haarlem's classic cafes with a warm, homely atmosphere.
                     Visitors often praise its relaxing environment and friendly staff, making it a popular place to spend a calm afternoon.
-                </p>
-                <p><strong>Address:</strong> Gasthuisstraat 48, 2011 XP Haarlem</p>
+                    </p>
+                    <p><strong>Address:</strong> Gasthuisstraat 48, 2011 XP Haarlem</p>
+                    <a href="details.html" class="details-btn">View Details</a>
+                </section>
             </article>
 
             <article class="cafe-card">
                 <figure class="cafe-image">
-                    <img src="blend.png" alt="Blend Haarlem">
-                    <figcaption class="cafe-name">Blend Haarlem</figcaption>
+                    <img src="images/blend.png" alt="Blend Haarlem">
                 </figure>
-                <p><strong>About:</strong> A bright, modern cafe serving all-day breakfast, lunch, and fresh smoothies.
+                <section class="cafe-info">
+                    <h2>Blend Haarlem</h2>
+                    <p><strong>About:</strong> A bright, modern cafe serving all-day breakfast, lunch, and fresh smoothies.
                     Their menu includes vegan and gluten-free options, which makes it a great choice for everyone.
-                </p>
-                <p><strong>Address:</strong> Kleine Houtstraat 139, Haarlem</p>
+                    </p>
+                    <p><strong>Address:</strong> Kleine Houtstraat 139, Haarlem</p>
+                    <a href="details.html" class="details-btn">View Details</a>
+                </section>
             </article>
     </section>
 
@@ -85,7 +96,23 @@
     </aside>
 
     <footer>
-        <p>© 2025 CafeFinderNL — Helping you find the best cafes in the Netherlands.</p>
+        <p class="footer-text">
+            © 2025 CafeFinder NL — Helping you find the best budget cafes in the Netherlands.
+        </p>
+
+        <section class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </section>
+
+        <section class="footer-socials">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+        </section>
     </footer>
 </body>
 </html>
