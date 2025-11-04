@@ -11,8 +11,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-        <figure>
+    <header class="menu">
+        <figure class="logo">
             <img src="Logo.png" alt="Logo">
             <figcaption>
                 HaarlemCafes
@@ -21,9 +21,8 @@
 
         <nav>
             <ul>
-                <li><a href="homepage.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="cafes.html">Cafes</a></li>
-                <li><a href="reviews.html">Review</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -32,43 +31,51 @@
     <section class="hero">
         <article>
             <img src="haarlembanner.png" alt="Haarlem City" class="hero-img">
-            <h1>List of cafes sorted by price</h1>
-            <h1>Here you can find all Best Cafes in Haarlem</h1>
-            <a href="#cafes-section" class="explore-btn">Explore</a>
+            <header class="hero-content">
+                <h1>List of cafes sorted by price</h1>
+                <h2>Here you can find all Best Cafes in Haarlem</h2>
+                <a href="#cafes-section" class="explore-btn">Explore</a>
+            </header>
         </article>
     </section>
 
     <section id="cafes-section" class="cafes">
-            <header>
+            <header class="cafe-text">
                 <h1>Top Cafes in Haarlem</h1>
                 <p>Discover the most loved cafes in Haarlem — from hidden gems to popular local favorites. Each place was carefully selected for its cozy atmosphere, great coffee, and welcoming vibe.</p>
                 <p>Whether you're looking for a quiet spot to study, a brunch place with friends, or just the perfect cappuccino, this list will help you find your new favorite cafe in the heart of Haarlem.</p>
             </header>
-            
-            <article>
-                <figure>
+        
+            <article class="cafe-card">
+                <figure class="cafe-image">
                     <img src="native.png" alt="Native Haarlem - Koffie">
+                    <figcaption class="cafe-name">Native Haarlem - Koffie</figcaption>
                 </figure>
-                <figcaption>Native Haarlem - Koffie</figcaption>
-                <p><strong>About:</strong> A cozy specialty coffee bar filled with plants and vintage furniture, located in the heart of Haarlem.</p>
+                <p><strong>About:</strong> A cozy specialty coffee bar filled with plants and vintage furniture, located in the heart of Haarlem.
+                    They are known for their homemade pastries and freshly roasted beans from local suppliers.
+                </p>
                 <p><strong>Address:</strong> Breestraat 23, 2011 ZX Haarlem</p>
             </article>
 
-            <article>
-                <figure>
+            <article class="cafe-card">
+                <figure class="cafe-image">
                     <img src="mogador.png" alt="Mogador Café">
+                    <figcaption class="cafe-name">Mogador Café</figcaption>
                 </figure>
-                <figcaption>Mogador Café</figcaption>
-                <p><strong>About:</strong> One of Haarlem's classic cafes with a warm, homely atmosphere.</p>
+                <p><strong>About:</strong> One of Haarlem's classic cafes with a warm, homely atmosphere.
+                    Visitors often praise its relaxing environment and friendly staff, making it a popular place to spend a calm afternoon.
+                </p>
                 <p><strong>Address:</strong> Gasthuisstraat 48, 2011 XP Haarlem</p>
             </article>
 
-            <article>
-                <figure>
+            <article class="cafe-card">
+                <figure class="cafe-image">
                     <img src="blend.png" alt="Blend Haarlem">
+                    <figcaption class="cafe-name">Blend Haarlem</figcaption>
                 </figure>
-                <figcaption>Blend Haarlem</figcaption>
-                <p><strong>About:</strong> A bright, modern cafe serving all-day breakfast, lunch, and fresh smoothies.</p>
+                <p><strong>About:</strong> A bright, modern cafe serving all-day breakfast, lunch, and fresh smoothies.
+                    Their menu includes vegan and gluten-free options, which makes it a great choice for everyone.
+                </p>
                 <p><strong>Address:</strong> Kleine Houtstraat 139, Haarlem</p>
             </article>
     </section>
