@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Maksym Kolisnychenko">
-    <meta name="description" content="Contact HaarlemCafes - ask questions, send feedback, or collaborate with us.">
+    <meta name="description" content="Contact HaarlemCafes &ndash; ask questions, send feedback, or collaborate with us.">
     <meta name="keywords" content="contact, Haarlem cafes, email, message, support, Netherlands">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Cafe Finder</title>
@@ -29,10 +29,27 @@
             </ul>
         </nav>
     </header>
+    
+    <!-- mobile nav -->
+    <input type="checkbox" id="burger-toggle">
+
+    <label for="burger-toggle" class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="cafes.html">Cafes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <section class="contact-title">
         <h1>Get in touch</h1>
-        <p>Questions, feedback, or partnership? We'd love to hear from you.</p>
+        <p>Questions, feedback, or partnership&#63; We&apos;d love to hear from you.</p>
     </section>
 
     <figure class="contact-image">
@@ -45,13 +62,13 @@
 
             <ul class="form-list">
                 <li>
-                    <label for="name">Name*</label>
+                    <label for="name">Name&#42;</label>
                     <input type="text" id="name" name="name" placeholder="Maksym Kolisnychenko" required/>
                 </li>
 
                 <li>
-                    <label for="email">Email Address*</label>
-                    <input type="email" id="email" name="email" placeholder="maksymkol@youremail.com" required/>
+                    <label for="email">Email Address&#42;</label>
+                    <input type="email" id="email" name="email" placeholder="maksymkol&#64;youremail.com" required/>
                 </li>
 
                 <li>
@@ -60,12 +77,12 @@
                 </li>
 
                 <li>
-                    <label for="subject">Subject*</label>
+                    <label for="subject">Subject&#42;</label>
                     <input type="text" id="subject" name="subject" placeholder="Your Subject" required/>
                 </li>
 
                 <li>
-                    <label for="message">Message*</label>
+                    <label for="message">Message&#42;</label>
                     <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
                 </li>
             </ul>
@@ -77,15 +94,15 @@
     <section class="contact-details">
         <h2>Contact Details</h2>
         <ul>
-            <li><img src="/images/mail.png" alt="email icon" class="icon"> Email: <strong>support@haarlemcafes.nl</strong></li>
-            <li><img src="/images/phone-call.png" alt="phone icon" class="icon"> <strong>+31 612345678</strong></li>
+            <li><img src="/images/mail.png" alt="email icon" class="icon"> Email: <strong>support&#64;haarlemcafes.nl</strong></li>
+            <li><img src="/images/phone-call.png" alt="phone icon" class="icon"> <strong>&#43;31 612345678</strong></li>
             <li><img src="/images/location.png" alt="Location icon" class="icon"> Location:<strong>Haarlem, NL</strong></li>
         </ul>
     </section>
 
     <footer>
         <p class="footer-text">
-            &copy; 2025 CafeFinder NL - Helping you find the best budget cafes in the Netherlands.
+            &copy; 2025 CafeFinder NL &mdash; Helping you find the best budget cafes in the Netherlands.
         </p>
 
         <section class="footer-links">
@@ -94,10 +111,10 @@
         </section>
 
         <section class="footer-socials">
-            <a href="https://www.instagram.com" target="_blank">
+            <a href="https://www.instagram.com" target="blank">
                 <img src="images/instagram.png" alt="Instagram" title="instagram">
             </a>
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com" target="blank">
                 <img src="images/facebook.png" alt="Facebook" title="facebook">
             </a>
         </section>

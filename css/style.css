@@ -5,7 +5,7 @@ body {
     margin: 0 auto;
     font-family: "Inter", sans-serif;
     background-color: #F8EDE4;
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 h1,
@@ -29,7 +29,7 @@ nav > ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 25px;
+    gap: 40px;
 }
 
 nav > ul > li > a {
@@ -98,14 +98,14 @@ nav a.active {
 
 .hero-content h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
+    font-size: 40px;
     margin-bottom: 0.6rem;
 }
 
 .hero-content h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    margin-bottom: 1.6rem;
+    font-size: 36px;
+    margin-bottom: 2rem;
 }
 
 .hero-img {
@@ -128,7 +128,7 @@ nav a.active {
     color: #F8EDE4;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 26px;
     border-radius: 25px;
     text-decoration: none;
     transition: transform 0.1s ease-in-out, background-color 0.3s ease-in-out;
@@ -146,7 +146,7 @@ nav a.active {
     color: #27150F;
     text-align: center;
     margin: 0 auto 3rem auto;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .cafe-text h1 {
@@ -315,13 +315,13 @@ footer {
 }
 
 .hero-home-content h1 {
-    font-size: 2rem;
+    font-size: 40px;
     margin-bottom: 7rem;
     word-spacing: 1px;
 }
 
 .hero-home-content p {
-    font-size: 1.4rem;
+    font-size: 32px;
     margin-bottom: 1.5rem;
 }
 
@@ -333,7 +333,7 @@ footer {
     color: #F8EDE4;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 26px;
     border-radius: 25px;
     text-decoration: none;
     transition: transform 0.1s ease-in-out, background-color 0.3s ease-in-out;
@@ -350,7 +350,7 @@ footer {
 .about-section {
     text-align: center;
     color: #27150F;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 3rem auto;
     font-size: 1.2rem;
 }
@@ -370,13 +370,13 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 3rem auto;
     padding: 0 1rem;
 }
 
 .info-text {
-    width: 30%;
+    width: 40%;
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: #27150F;
@@ -388,17 +388,6 @@ footer {
     border-radius: 12px;
     object-fit: cover;
     float: right;
-}
-
-/* Mobile version */
-@media (max-width: 768px) {
-    .info-split {
-        flex-direction: column;
-        text-align: center;
-    }
-    .info-text, .info-image {
-        width: 100%;
-    }
 }
 
 .closing-text {
@@ -593,4 +582,360 @@ form textarea {
     width: 24px;
     display: inline-block;
     text-align: center;
+}
+
+/* media queries */
+
+@media (max-width: 980px) {
+
+    nav > ul {
+        gap: 25px;
+    }
+
+    nav > ul > li > a {
+        font-size: 24px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .explore-btn {
+        font-size: 20px;
+        padding: 1rem 2rem;
+    }
+    .cafe-text {
+        max-width: 800px;
+    }
+
+    .hero-home-content h1 {
+        font-size: 26px;
+        margin-bottom: 5rem;
+    }
+
+    .hero-home-content p {
+        font-size: 20px;
+    }
+
+    .hero-btn {
+        font-size: 20px;
+        padding: 1rem 2rem;
+    }
+
+    .about-section {
+        max-width: 800px;
+    }
+
+    .info-split {
+        max-width: 800px;
+    }
+
+    .info-text {
+        width: 30%;
+    }
+
+    .closing-text {
+        width: 80%;
+    }
+
+    .contact-btn {
+        padding: 1rem 2rem;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu nav {
+        display: none;
+    }
+
+    .burger {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        width: 32px;
+        height: 22px;
+        cursor: pointer;
+        z-index: 10002;
+        display: block;
+    }
+
+    .burger span {
+        background-color: #27150F;
+        position: absolute;
+        height: 3px;
+        border-radius: 2px;
+        width: 100%;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    .burger span:nth-child(1) { top: 0; }
+    .burger span:nth-child(2) { top: 9px; }
+    .burger span:nth-child(3) { top: 18px; }
+
+    #burger-toggle {
+        display: none;
+    }
+
+    .burger-menu {
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 180px;
+        height: auto;
+        background-color: #C79A6D;
+        padding-top: 70px;
+        transition: 0.3s ease-in-out;
+        z-index: 10001;
+        text-align: center;
+        border: 2px solid #27150F;
+    }
+
+    .burger-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column; 
+        gap: 0;
+    }
+
+    .burger-menu li {
+        padding: 10px;
+    }
+
+    .burger-menu a {
+        color: #27150F;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: "Playfair Display", serif;
+    }
+
+    .burger-menu a:hover {
+        color: #F8EDE4;
+    }
+
+    #burger-toggle:checked ~ .burger-menu {
+        right: 0;
+    }
+
+    
+    .hero {
+        height: auto;
+    }
+
+    .hero-content {
+        width: 90%;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+    }
+
+    .explore-btn {
+        padding: 0.8rem 1.6rem;
+        font-size: 18px;
+    }
+
+    .cafe-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .cafe-image img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .cafe-info h2 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .cafe-info p {
+        font-size: 1rem;
+    }
+
+    .details-btn {
+        font-size: 16px;
+        padding: 0.6rem 1.4rem;
+    }
+
+    .cafe-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .cafe-text p {
+        font-size: 1rem;
+    }
+
+    .menu {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .logo figcaption {
+        font-size: 1.5rem;
+    }
+
+    #logo-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .hero-home-content h1 {
+        font-size: 24px;
+        margin-bottom: 3rem;
+    }
+
+    .hero-home-content p {
+        font-size: 18px;
+    }
+
+    .hero-btn {
+        font-size: 20px;
+        padding: 0.8rem 1.6rem;
+    }
+
+    .about-section {
+        width: 90%;
+        margin: 2rem auto;
+        font-size: 1rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .info-split {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-text {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .info-image img {
+        max-width: 280px;
+    }
+
+    .closing-text {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .contact-btn {
+        padding: 0.8rem 1.6rem;
+        font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-socials img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
+    }
+
+    #cookies {
+        padding: 5px;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    #cookies a.accept {
+        margin: 0;
+    }
+
+    .contact-image img {
+        max-width: 300px;
+    }
+
+    .contact-details {
+        max-width: 95%;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+
+    .contact-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-title p {
+        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-image img {
+        max-width: 260px;
+    }
+
+    #contact-form {
+        width: 90%;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    form input,
+    form textarea {
+        width: 90%;
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .submit-btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .contact-details {
+        max-width: 90%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .contact-details li {
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .icon {
+        width: 22px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .burger-menu,
+    #burger-toggle {
+        display: none;
+    }
 }
