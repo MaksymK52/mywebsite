@@ -939,3 +939,39 @@ form textarea {
         display: none;
     }
 }
+
+.price-table {
+    text-align: center;
+    margin: 3rem auto;
+    max-width: 700px;
+    color: #27150F;
+    font-family: "Inter", sans-serif;
+}
+
+.price-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    border: 2px solid #C79A6D;
+    margin-top: 1rem;
+}
+
+.price-table th {
+    background-color: #C79A6D;
+    color: #F8EDE4;
+    padding: 0.8rem;
+    font-family: "Playfair Display", serif;
+}
+
+.price-table tr:nth-child(even) {
+    background-color: #CFF;
+}
+
+.price-table tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+.price-table td {
+    padding: 0.8rem;
+    border: 1px solid #C79A6D;
+}
