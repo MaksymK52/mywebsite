@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Maksym Kolisnychenko">
+    <meta name="description" content="Contact HaarlemCafes - ask questions, send feedback, or collaborate with us.">
+    <meta name="keywords" content="contact, Haarlem cafes, email, message, support, Netherlands">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Cafe Finder</title>
+    <link rel="icon" type="image/png" href="images/Logo.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header class="menu">
+        <figure class="logo">
+            <a href="home.html">
+                <img src="images/Logo.png" alt="Logo" title="logo" id="logo-img">
+                <figcaption>
+                    HaarlemCafes
+                </figcaption>
+            </a>
+        </figure>
+
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cafes.html">Cafes</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-title">
+        <h1>Get in touch</h1>
+        <p>Questions, feedback, or partnership? We'd love to hear from you.</p>
+    </section>
+
+    <figure class="contact-image">
+        <img src="images/contactbanner.png" alt="Contact Us image" title="Get in touch">
+    </figure>
+
+    <form action="#" method="post" id="contact-form">
+        <fieldset>
+            <legend>Send us a message</legend>
+
+            <ul class="form-list">
+                <li>
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" placeholder="Maksym Kolisnychenko" required/>
+                </li>
+
+                <li>
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" placeholder="maksymkol@youremail.com" required/>
+                </li>
+
+                <li>
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+31 6 98765432"/>
+                </li>
+
+                <li>
+                    <label for="subject">Subject*</label>
+                    <input type="text" id="subject" name="subject" placeholder="Your Subject" required/>
+                </li>
+
+                <li>
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+                </li>
+            </ul>
+
+            <input type="submit" value="Send Message" class="submit-btn">
+        </fieldset>
+    </form>
+
+    <section class="contact-details">
+        <h2>Contact Details</h2>
+        <ul>
+            <li><img src="/images/mail.png" alt="email icon" class="icon"> Email: <strong>support@haarlemcafes.nl</strong></li>
+            <li><img src="/images/phone-call.png" alt="phone icon" class="icon"> <strong>+31 612345678</strong></li>
+            <li><img src="/images/location.png" alt="Location icon" class="icon"> Location:<strong>Haarlem, NL</strong></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p class="footer-text">
+            &copy; 2025 CafeFinder NL - Helping you find the best budget cafes in the Netherlands.
+        </p>
+
+        <section class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </section>
+
+        <section class="footer-socials">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram" title="instagram">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook" title="facebook">
+            </a>
+        </section>
+    </footer>
+</body>
+</html>
